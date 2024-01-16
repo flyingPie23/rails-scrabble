@@ -1,12 +1,20 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
+#nav{
+  box-shadow: 1px 1px 1px #243447;
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+  .navbar-brand{
+    font-family: "Oswald", sans-serif;
+    font-size: 35px;
+  }
+  .nav-item{
+    margin: 20px;
+  }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+  .btn{
+    color: #c51f5d;
+    border: #c51f5d solid 1px;
+  }
+  .btn:hover{
+    background-color: #c51f5d;
+    color: white;
+  }
 }

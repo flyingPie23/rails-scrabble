@@ -1,2 +1,25 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="home">
+  <div class="container">
+
+    <h1 class="text-center">
+      <i class="fa-solid fa-book logo"></i>
+      SCRABBLER
+    </h1>
+
+
+    <div class="info-card">
+      <h3> Join the fun and test your knowlege </h3>
+      <p> Scrabbler <strong>{SKAB-LER}</strong> Find the word that matches the definition using the letters given. </p>
+        <hr>
+    </div>
+
+    <div class="info-card-links">
+      <a href="" class="link link-green">How To Play</a>
+      <a href="" class="link link-red">Login</a>
+    </div>
+
+    <% date = Date.today %>
+    <p class= "text-center"><%= date.strftime('%a %d %b %Y') %></p>
+  </div>
+
+</div>
