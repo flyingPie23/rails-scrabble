@@ -1,0 +1,29 @@
+#instruction{
+  .modal-header{
+    .modal-title{
+      color: white;
+      font-family: "Oswald", sans-serif;
+    }
+  }
+
+  .modal-body{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    overflow: scroll;
+    height: 450px;
+  }
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 12px;
+  height: 45px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 27, 27);
+  border-radius: 15px;
+}
