@@ -1,0 +1,37 @@
+#registration{
+  h2{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    margin: 15px;
+
+  }
+
+  p{
+    color: white;
+    font-family: "Hind", sans-serif;
+    margin: 15px;
+
+  }
+
+  .body{
+    margin: 15px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+
+    .form-actions{
+      display: flex;
+      margin-top: 15px;
+      .form-links{
+        margin-right: 23px;
+      }
+    }
+
+    .sign-group{
+      display: flex;
+      margin-top: 15px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
+}

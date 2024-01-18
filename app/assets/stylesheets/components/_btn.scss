@@ -1,0 +1,123 @@
+.link{
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+
+  padding: 25px;
+  border-radius: 50px;
+  width: 150px;
+}
+
+.link-red{
+  border: #c51f5d solid 1px;
+  color: #c51f5d;
+
+}
+
+.link-red:hover{
+  background-color: #c51f5d;
+  color: white;
+
+}
+
+.link-green{
+  border: #00a99d solid 1px;
+  color: #00a99d;
+
+}
+
+.link-green:hover{
+  background-color: #00a99d;
+  color: white;
+}
+
+.btn-red{
+  color: #c51f5d;
+  border: #c51f5d solid 1px;
+  padding: 9px;
+  background-color: transparent;
+  width: 95px;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-red:hover{
+  background-color: #c51f5d;
+  color: white;
+}
+
+.btn-green{
+  color: #00a99d;
+  border: #00a99d solid 1px;
+  padding: 9px;
+  background-color: transparent;
+  width: 95px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-green:hover{
+  background-color: #00a99d;
+  color: white;
+}
+
+.sign-up{
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-size: 36px;
+
+  padding: 10px 25px;
+  border-radius: 50px;
+}
+
+.sign-up-discord{
+  i{
+   color: #7289d9;
+  }
+
+  color: white;
+  border: #7289d9 solid 1px;
+}
+
+.sign-up-discord:hover{
+  i{
+    color: white;
+   }
+
+   background-color: #7288d985;
+}
+
+.sign-up-google{
+  i{
+    color: #c71610;
+  }
+
+  color: white;
+  border: #c71610 solid 1px;
+}
+
+.sign-up-google:hover{
+  i{
+    color: white;
+  }
+
+  background-color: #f2a50ceb;
+  border: #f2a50ceb solid 1px;
+}
+
+.sign-up-github{
+  i{
+    color: #2b3137;
+  }
+
+  color: white;
+  border: rgba(255, 255, 255, 0.594) solid 1px;
+}
+
+.sign-up-github:hover{
+  i{
+    color: white;
+  }
+
+  background-color: #24292e85;
+}

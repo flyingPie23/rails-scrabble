@@ -37,39 +37,5 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 95px;
-
-    .link{
-      background-color: transparent;
-      text-align: center;
-      text-decoration: none;
-
-      padding: 25px;
-      border-radius: 50px;
-      width: 150px;
-    }
-
-    .link-red{
-      border: #c51f5d solid 1px;
-      color: #c51f5d;
-
-    }
-
-    .link-red:hover{
-      background-color: #c51f5d;
-      color: white;
-
-    }
-
-    .link-green{
-      border: #00a99d solid 1px;
-      color: #00a99d;
-
-    }
-
-    .link-green:hover{
-      background-color: #00a99d;
-      color: white;
-    }
-
   }
 }

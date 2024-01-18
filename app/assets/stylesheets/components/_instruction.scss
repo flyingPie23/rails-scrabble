@@ -8,9 +8,12 @@
 
   .modal-body{
     color: white;
-    font-family: "Oswald", sans-serif;
     overflow: scroll;
     height: 450px;
+
+    h3{
+      font-family: "Hind", sans-serif;
+    }
   }
 }
 
