@@ -9,14 +9,25 @@
 
     <div class="info-card">
       <h3> Join the fun and test your knowlege </h3>
-      <p> Scrabbler <strong>{SKAB-LER}</strong> Find the word that matches the definition using the letters given. </p>
+      <p> Scrabbler <strong>{SKRAB-LER}</strong> Find the word that matches the definition using the letters given. </p>
         <hr>
     </div>
 
-    <div class="info-card-links">
-      <a href="" class="link link-green" data-bs-toggle="modal" data-bs-target="#instructions">How To Play</a>
-      <a href="" class="link link-red">Login</a>
-    </div>
+    <% if user_signed_in? %>
+        <div class="info-card-links">
+          <a class="link link-green" data-bs-toggle="modal" data-bs-target="#instructions">How To Play</a>
+          <a href="" class="link link-red">Play</a>
+        </div>
+
+      <% else %>
+        <div class="info-card-links">
+          <a href="" class="link link-green" data-bs-toggle="modal" data-bs-target="#instructions">How To Play</a>
+          <a href="" class="link link-blue">Play Offline</a>
+          <%= link_to "Login", new_user_session_path, class: "link link-red" %>
+        </div>
+
+    <% end %>
+
 
     <% date = Date.today %>
     <p class= "text-center"><%= date.strftime('%a %d %b %Y') %></p>
