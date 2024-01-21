@@ -1,0 +1,102 @@
+#game-page{
+  .header{
+    padding: 10px;
+    color: white;
+    margin: 12px;
+    display: flex;
+    justify-content: space-between;
+
+    h2{
+      font-family: "Russo One", sans-serif;
+      font-size: 65px;
+      text-shadow: 2px 2px 2px black;
+    }
+
+    .health-start{
+      color: #1DB954;
+
+      i{
+        color: white;
+      }
+    }
+
+    .health-mid{
+      color: #ffff00;
+
+      i{
+        color: white;
+      }
+    }
+
+    .health-end{
+      color: #FF0000;
+
+      i{
+        color: white;
+      }
+    }
+  }
+
+  hr{
+    color: white;
+  }
+
+  .body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    .card{
+      width: 1200px;
+      text-align: center;
+      padding: 25px;
+      border-radius: 25px;
+      box-shadow: 0px 0px 10px 0px black;
+      margin-bottom: 24px;
+    }
+
+    .card-header{
+      background-color: #12171c;
+      h1{
+        font-family: "Oswald", sans-serif;
+        color: white;
+      }
+
+    }
+
+
+    .card-element{
+
+      box-shadow: 0px 0px 10px 0px black;
+
+      background-color: #12171c;
+
+      .letters{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h1{
+          font-family: "Russo One", sans-serif;
+          color: #12171c;
+          font-size: 50px;
+          background-color: white;
+          padding: 14px 24px;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .card-input{
+
+      box-shadow: 0px 0px 10px 0px black;
+
+      background-color: #12171c;
+
+    }
+  }
+
+}

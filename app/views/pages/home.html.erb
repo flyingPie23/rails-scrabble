@@ -16,7 +16,10 @@
     <% if user_signed_in? %>
         <div class="info-card-links">
           <a class="link link-green" data-bs-toggle="modal" data-bs-target="#instructions">How To Play</a>
-          <a href="" class="link link-red">Play</a>
+          <%= form_with model: @game, url: games_path do |form| %>
+            <%= form.submit "Create Game", class: "link link-red" %>
+          <% end %>
+
         </div>
 
       <% else %>

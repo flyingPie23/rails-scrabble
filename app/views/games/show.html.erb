@@ -1,0 +1,49 @@
+<div id="game-page">
+  <div class="header">
+    <h2>
+      000
+      <i class="fa-solid fa-gamepad"></i>
+    </h2>
+
+    <h2>
+      <i class="fa-solid fa-clock"></i>
+      000
+    </h2>
+
+    <h2 class="health-start">
+      <i class="fa-regular fa-heart"></i>
+      100
+    </h2>
+  </div>
+
+  <hr>
+
+
+  <div class="container">
+    <div class="body">
+      <div>
+        <div class="card card-header">
+          <h1><%= @item.description %></h1>
+        </div>
+
+        <div class="card card-element">
+          <div class="letters">
+            <% letters = @item.word.split(//) %>
+            <% letters = letters.shuffle %>
+            <% letters.each do |letter| %>
+
+              <h1><%= letter.capitalize %></h1>
+
+            <% end %>
+          </div>
+        </div>
+
+        <div class="card card-input answer-input">
+          <input type="text" placeholder="Enter your text"/>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

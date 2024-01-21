@@ -23,3 +23,17 @@ body{
   text-align: center;
   padding: 25px;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 45px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 27, 27);
+  border-radius: 15px;
+}
