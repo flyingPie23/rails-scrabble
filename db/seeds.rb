@@ -11,7 +11,15 @@ require 'net/http'
 require 'uri'
 require 'json'
 
+puts "clearing database..."
+Item.destroy_all
+
+DICTIONARY = ENV['DICTIONARY_API_KEY']
+
+
 words = ["apple", "tree", "sun", "cat", "blue", "happy"]
+
+puts "seeding database..."
 
 def get_definition(word, api_key)
   uri = URI("https://api.dictionaryapi.dev/api/v2/entries/en_US/#{word}")
@@ -22,10 +30,11 @@ def get_definition(word, api_key)
 end
 
 words.each do |word|
-  api_key = "PAlItrTsiI0ZtJYUXslE/w==zYhuYLq3rBW5nLCY"
 
-  definition = get_definition(word, api_key)
+  definition = get_definition(word, DICTIONARY)
   puts "#{word}: #{definition}"
 
   Item.create(word: word, description: definition)
 end
+
+puts "done! #{Item.count} items created."
