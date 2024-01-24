@@ -17,7 +17,6 @@ Item.destroy_all
 DICTIONARY = ENV['DICTIONARY_API_KEY']
 
 
-words = ["apple", "tree", "sun", "cat", "blue", "happy"]
 
 puts "seeding database..."
 
