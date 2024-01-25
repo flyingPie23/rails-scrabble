@@ -11,11 +11,12 @@ require 'net/http'
 require 'uri'
 require 'json'
 
+DICTIONARY = ENV['DICTIONARY_API_KEY']
+
 puts "clearing database..."
 Item.destroy_all
 
-DICTIONARY = ENV['DICTIONARY_API_KEY']
-
+words = ["apple", "tree", "sun", "cat", "blue", "happy","book", "car", "flower", "sky", "dog", "green"]
 
 
 puts "seeding database..."
